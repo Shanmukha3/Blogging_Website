@@ -4,6 +4,7 @@ import path from 'path';
 const app = express();
 const PORT = 3000;
 
+
 // Middleware
 app.use(express.urlencoded({ extended: true })); // For parsing form data
 app.use(express.json()); // For parsing JSON data
@@ -59,3 +60,5 @@ app.post('/update', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+
